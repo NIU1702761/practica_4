@@ -6,7 +6,7 @@
 
 void my_mv(const char *arxiu, const char *nom_o_lloc){
         int fd = open(arxiu,O_RDONLY);
-        int fd2 = open(nom_o_lloc, O_CREAT | O_WRONLY | O_TRUNC, S_IRWXU );
+        int fd2=open(nom_o_lloc, O_CREAT|O_WRONLY|O_TRUNC, S_IRWXU );
         int num;
         char buf[1024];
         if (fd == -1) {
